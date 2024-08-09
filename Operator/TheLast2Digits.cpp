@@ -2,12 +2,16 @@
 using namespace std;
 
 int main() {
+    unsigned long long A, B, C, D;
+    cin >> A >> B >> C >> D;
+    
+    unsigned long long result = (A % 100) * (B % 100) % 100 * (C % 100) % 100 * (D % 100) % 100;
 
-    long long a,b,c,d,multiplication;
-    cin>>a>>b>>c>>d;
-    multiplication= a*b*c*d;
-
-    cout<<multiplication % 100<<endl;
-
+    if (result < 10) {
+        cout << "0" << result << endl;
+    } else {
+        cout << result << endl;
+    }
+    
     return 0;
 }
