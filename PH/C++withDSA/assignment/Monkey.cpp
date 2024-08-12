@@ -15,8 +15,9 @@ int main()
                 if (s[i] > s[j])
                 {
                     swap(s[i], s[j]);
-                }
+                }  
             }
+
         }
 
         for (int i = 0; i < len; i++)
