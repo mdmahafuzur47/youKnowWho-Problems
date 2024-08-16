@@ -13,7 +13,7 @@ int main() {
     int cnt=0;
 
     for(int i=0; i<n; i++){
-        cout<<element.find(arr[i]+1);
+        // cout<<element.find(arr[i]+1);
     }
   
 
