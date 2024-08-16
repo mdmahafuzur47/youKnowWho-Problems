@@ -16,6 +16,10 @@ bool cmp(Student a, Student b)
 {
     if (a.eng_marks + a.math_marks > b.eng_marks + b.math_marks)
         return true;
+    else if(a.eng_marks+a.math_marks == b.eng_marks + b.math_marks) {
+        if(a.id < b.id) return true;
+        else return false;
+    }
     else
         return false;
 }
