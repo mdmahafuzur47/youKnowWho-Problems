@@ -50,6 +50,8 @@ bool same_same(myStack st1, myStack st2)
         {
             return false;
         }
+        st1.pop();
+        st2.pop();
     }
     return true;
 }
@@ -78,15 +80,14 @@ int main()
     if (m != n)
     {
         cout << "NO" << endl;
-        return;
+        return 0;
     }
 
     bool same = same_same(st1, st2);
 
-    cout<<same<<endl;
+    cout << same << endl;
 
-    print_stack(st1);
-    print_stack(st2);
+    (same) ? cout << "YES" << endl : cout << "NO" << endl;
 
     return 0;
 }
