@@ -49,6 +49,8 @@ int main() {
 
     mergeSort(v,0,n-1);
 
+    reverse(v.begin(),v.end());
+
     for(auto value:v){
         cout<<value<<" ";
     }
